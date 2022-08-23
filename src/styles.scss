@@ -1,29 +1,29 @@
 // SASS Variables
 
 $maincolor: black;
-$contrastcolor: grey;
+$contrastcolor: white;
 
 
 // Mixins aka presets styles
 
-@mixin white-text-black-bg {
+@mixin white-text-black-background {
     color: $contrastcolor;
     background-color: $maincolor;
 }
 
-@mixin black-text-white-bg {
+@mixin black-text-white-background {
     color: $maincolor;
     background-color: $contrastcolor;
 }
 
 // Header
 
-nav {
-    @include white-text-black-bg;
+.nav {
+    @include white-text-black-background;
     display: flex;
     Justify-content: flex-start;
     a {
-         @include white-text-black-bg;
+         @include white-text-black-background;
          div {
             margin: 10px;
             font-size: large;
